@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  list-style: none;
+  padding-inline-start: 0;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.chopper {
+  background: url(../img/personagem-tony-chopper.png);
+  background-size: cover;
+  background-position: center;
+}
+.zoro {
+  background: url(../img/personagem-roronoa-zoro.png);
+  background-size: cover;
+  background-position: center;
+}
+.luffy {
+  background: url(../img/personagem-monkey-d-luffy.png);
+  background-size: cover;
+  background-position: center;
+}
+.nami {
+  background: url(../img/personagem-nami.png);
+  background-size: cover;
+  background-position: center;
+}
+.sanji {
+  background: url(../img/personagem-sanji.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  margin-top: 10rem;
+  width: 240px;
+  height: 140px;
+}
+
+.grad {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(120deg, black 20%, transparent 80%);
+}
+.conteudo {
+  margin-left: 8rem;
+  max-width: 400px;
+  color: aliceblue;
+}
+.conteudo h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+.conteudo p {
+  font-size: 1.1rem;
+}
+
+.panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #00000050;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+button:focus img {
+  box-shadow: 0 0 5px 2px #eeeeee;
+  transform: scale(1.3);
+}
+button img {
+  border-radius: 50%;
+  border: 1px solid #131313;
+}
+
+@media (max-width: 750px) {
+  .panel {
+    width: 100vw;
+    height: 150px;
+    top: unset;
+    right: unset;
+    bottom: 0;
+    flex-direction: row;
+    gap: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .panel button,
+  button img {
+    width: 50px;
+    height: 48px;
+  }
+  .conteudo {
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  .logo {
+    margin-top: 5rem;
+  }
+  .grad {
+    background: linear-gradient(0deg, black 20%, transparent 80%);
+  }
+}
