@@ -27,12 +27,17 @@ const table = new Map([
 function changeContent(evento) {
   const bd = document.querySelector("body");
   const char = evento.target;
-  console.log(char);
   const tg = char.getAttribute("id");
-  console.log(tg);
   let curr = bd.getAttribute("class");
-  console.log(curr);
   bd.classList.replace(curr, tg);
+  table.forEach((key, value) => {
+    // const test = value.includes(tg);
+    // console.log(key, value);
+    if (value.includes(tg)) {
+      charName.innerText = value;
+      charInfo.innerText = key;
+    }
+  });
 }
 
 botoes.forEach((botao) => {
