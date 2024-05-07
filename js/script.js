@@ -30,12 +30,12 @@ function changeContent(evento) {
   const tg = char.getAttribute("id");
   let curr = bd.getAttribute("class");
   bd.classList.replace(curr, tg);
-  table.forEach((key, value) => {
-    // const test = value.includes(tg);
+  table.forEach((value, key) => {
+    // const test = key.includes(tg);
     // console.log(key, value);
     if (value.includes(tg)) {
-      charName.innerText = value;
-      charInfo.innerText = key;
+      charName.innerText = key;
+      charInfo.innerText = value;
     }
   });
 }
