@@ -18,27 +18,27 @@ button {
   border-radius: 50%;
 }
 
-.chopper {
+.Chopper {
   background: url(../img/personagem-tony-chopper.png);
   background-size: cover;
   background-position: center;
 }
-.zoro {
+.Zoro {
   background: url(../img/personagem-roronoa-zoro.png);
   background-size: cover;
   background-position: center;
 }
-.luffy {
+.Luffy {
   background: url(../img/personagem-monkey-d-luffy.png);
   background-size: cover;
   background-position: center;
 }
-.nami {
+.Nami {
   background: url(../img/personagem-nami.png);
   background-size: cover;
   background-position: center;
 }
-.sanji {
+.Sanji {
   background: url(../img/personagem-sanji.png);
   background-size: cover;
   background-position: center;
