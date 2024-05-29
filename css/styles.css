@@ -17,6 +17,13 @@ button {
   cursor: pointer;
   border-radius: 50%;
 }
+body:after {
+  display: none;
+  content: url(../img/personagem-monkey-d-luffy.png),
+    url(../img/personagem-tony-chopper.png),
+    url(../img/personagem-roronoa-zoro.png), url(../img/personagem-nami.png),
+    url(../img/personagem-sanji.png);
+}
 
 .Chopper {
   background: url(../img/personagem-tony-chopper.png);
